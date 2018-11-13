@@ -84,26 +84,18 @@ public class BalkonsWeaponMod
 	
 	public static Item				javelin;
 	
-	public static Item				spearWood;
-	public static Item				spearStone;
 	public static Item				spearSteel;
 	public static Item				spearDiamond;
 	public static Item				spearGold;
 	
-	public static Item				halberdWood;
-	public static Item				halberdStone;
 	public static Item				halberdSteel;
 	public static Item				halberdDiamond;
 	public static Item				halberdGold;
 	
-	public static Item				knifeWood;
-	public static Item				knifeStone;
 	public static Item				knifeSteel;
 	public static Item				knifeDiamond;
 	public static Item				knifeGold;
 	
-	public static Item				bayonetWood;
-	public static Item				bayonetStone;
 	public static Item				bayonetSteel;
 	public static Item				bayonetDiamond;
 	public static Item				bayonetGold;
@@ -112,13 +104,11 @@ public class BalkonsWeaponMod
 	public static Item				gunStock;
 	public static Item				musket_iron_part;
 	
-	public static Item				battleaxeWood;
-	public static Item				battleaxeStone;
 	public static Item				battleaxeSteel;
 	public static Item				battleaxeDiamond;
 	public static Item				battleaxeGold;
 	
-	public static Item				warhammerWood, warhammerStone, warhammerSteel, warhammerDiamond, warhammerGold;
+	public static Item				warhammerSteel, warhammerDiamond, warhammerGold;
 	
 	public static Item				crossbow;
 	public static Item				bolt;
@@ -127,7 +117,7 @@ public class BalkonsWeaponMod
 	public static Item				dart;
 	public static Item				dynamite;
 	
-	public static Item				flailWood, flailStone, flailSteel, flailDiamond, flailGold;
+	public static Item				flailSteel, flailDiamond, flailGold;
 	
 	public static Item				fireRod;
 	
@@ -140,9 +130,9 @@ public class BalkonsWeaponMod
 	
 	public static Item				dummy;
 	
-	public static Item				boomerangWood, boomerangStone, boomerangSteel, boomerangDiamond, boomerangGold;
+	public static Item				boomerangWood, boomerangSteel, boomerangDiamond, boomerangGold;
 	
-	public static Item				katanaWood, katanaStone, katanaSteel, katanaDiamond, katanaGold;
+	public static Item				katanaSteel, katanaDiamond, katanaGold;
 	
 	public static Item				flintlockPistol;
 	
@@ -212,8 +202,6 @@ public class BalkonsWeaponMod
 	{
 		if (modConfig.isEnabled("spear"))
 		{
-			spearWood = new ItemMelee("spear.wood", new MeleeCompSpear(Item.ToolMaterial.WOOD));
-			spearStone = new ItemMelee("spear.stone", new MeleeCompSpear(Item.ToolMaterial.STONE));
 			spearSteel = new ItemMelee("spear.iron", new MeleeCompSpear(Item.ToolMaterial.IRON));
 			spearGold = new ItemMelee("spear.gold", new MeleeCompSpear(Item.ToolMaterial.GOLD));
 			spearDiamond = new ItemMelee("spear.diamond", new MeleeCompSpear(Item.ToolMaterial.EMERALD));
@@ -221,8 +209,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("halberd"))
 		{
-			halberdWood = new ItemMelee("halberd.wood", new MeleeCompHalberd(Item.ToolMaterial.WOOD));
-			halberdStone = new ItemMelee("halberd.stone", new MeleeCompHalberd(Item.ToolMaterial.STONE));
 			halberdSteel = new ItemMelee("halberd.iron", new MeleeCompHalberd(Item.ToolMaterial.IRON));
 			halberdGold = new ItemMelee("halberd.gold", new MeleeCompHalberd(Item.ToolMaterial.GOLD));
 			halberdDiamond = new ItemMelee("halberd.diamond", new MeleeCompHalberd(Item.ToolMaterial.EMERALD));
@@ -230,8 +216,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("battleaxe"))
 		{
-			battleaxeWood = new ItemMelee("battleaxe.wood", new MeleeCompBattleaxe(Item.ToolMaterial.WOOD));
-			battleaxeStone = new ItemMelee("battleaxe.stone", new MeleeCompBattleaxe(Item.ToolMaterial.STONE));
 			battleaxeSteel = new ItemMelee("battleaxe.iron", new MeleeCompBattleaxe(Item.ToolMaterial.IRON));
 			battleaxeGold = new ItemMelee("battleaxe.gold", new MeleeCompBattleaxe(Item.ToolMaterial.GOLD));
 			battleaxeDiamond = new ItemMelee("battleaxe.diamond", new MeleeCompBattleaxe(Item.ToolMaterial.EMERALD));
@@ -239,8 +223,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("knife"))
 		{
-			knifeWood = new ItemMelee("knife.wood", new MeleeCompKnife(Item.ToolMaterial.WOOD));
-			knifeStone = new ItemMelee("knife.stone", new MeleeCompKnife(Item.ToolMaterial.STONE));
 			knifeSteel = new ItemMelee("knife.iron", new MeleeCompKnife(Item.ToolMaterial.IRON));
 			knifeGold = new ItemMelee("knife.gold", new MeleeCompKnife(Item.ToolMaterial.GOLD));
 			knifeDiamond = new ItemMelee("knife.diamond", new MeleeCompKnife(Item.ToolMaterial.EMERALD));
@@ -248,8 +230,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("warhammer"))
 		{
-			warhammerWood = new ItemMelee("warhammer.wood", new MeleeCompWarhammer(Item.ToolMaterial.WOOD));
-			warhammerStone = new ItemMelee("warhammer.stone", new MeleeCompWarhammer(Item.ToolMaterial.STONE));
 			warhammerSteel = new ItemMelee("warhammer.iron", new MeleeCompWarhammer(Item.ToolMaterial.IRON));
 			warhammerGold = new ItemMelee("warhammer.gold", new MeleeCompWarhammer(Item.ToolMaterial.GOLD));
 			warhammerDiamond = new ItemMelee("warhammer.diamond", new MeleeCompWarhammer(Item.ToolMaterial.EMERALD));
@@ -257,8 +237,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("flail"))
 		{
-			flailWood = new ItemFlail("flail.wood", Item.ToolMaterial.WOOD);
-			flailStone = new ItemFlail("flail.stone", Item.ToolMaterial.STONE);
 			flailSteel = new ItemFlail("flail.iron", Item.ToolMaterial.IRON);
 			flailGold = new ItemFlail("flail.gold", Item.ToolMaterial.GOLD);
 			flailDiamond = new ItemFlail("flail.diamond", Item.ToolMaterial.EMERALD);
@@ -266,8 +244,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("katana"))
 		{
-			katanaWood = new ItemMelee("katana.wood", new MeleeComponent(MeleeSpecs.KATANA, Item.ToolMaterial.WOOD));
-			katanaStone = new ItemMelee("katana.stone", new MeleeComponent(MeleeSpecs.KATANA, Item.ToolMaterial.STONE));
 			katanaSteel = new ItemMelee("katana.iron", new MeleeComponent(MeleeSpecs.KATANA, Item.ToolMaterial.IRON));
 			katanaGold = new ItemMelee("katana.gold", new MeleeComponent(MeleeSpecs.KATANA, Item.ToolMaterial.GOLD));
 			katanaDiamond = new ItemMelee("katana.diamond", new MeleeComponent(MeleeSpecs.KATANA, Item.ToolMaterial.EMERALD));
@@ -276,7 +252,6 @@ public class BalkonsWeaponMod
 		if (modConfig.isEnabled("boomerang"))
 		{
 			boomerangWood = new ItemMelee("boomerang.wood", new MeleeCompBoomerang(Item.ToolMaterial.WOOD));
-			boomerangStone = new ItemMelee("boomerang.stone", new MeleeCompBoomerang(Item.ToolMaterial.STONE));
 			boomerangSteel = new ItemMelee("boomerang.iron", new MeleeCompBoomerang(Item.ToolMaterial.IRON));
 			boomerangGold = new ItemMelee("boomerang.gold", new MeleeCompBoomerang(Item.ToolMaterial.GOLD));
 			boomerangDiamond = new ItemMelee("boomerang.diamond", new MeleeCompBoomerang(Item.ToolMaterial.EMERALD));
@@ -308,8 +283,6 @@ public class BalkonsWeaponMod
 		{
 			if (modConfig.isEnabled("knife"))
 			{
-				bayonetWood = new ItemMusket("musketbayonet.wood", new MeleeCompKnife(Item.ToolMaterial.WOOD), knifeWood);
-				bayonetStone = new ItemMusket("musketbayonet.stone", new MeleeCompKnife(Item.ToolMaterial.STONE), knifeStone);
 				bayonetSteel = new ItemMusket("musketbayonet.iron", new MeleeCompKnife(Item.ToolMaterial.IRON), knifeSteel);
 				bayonetGold = new ItemMusket("musketbayonet.gold", new MeleeCompKnife(Item.ToolMaterial.GOLD), knifeGold);
 				bayonetDiamond = new ItemMusket("musketbayonet.diamond", new MeleeCompKnife(Item.ToolMaterial.EMERALD), knifeDiamond);
@@ -362,8 +335,6 @@ public class BalkonsWeaponMod
 	{
 		if (modConfig.isEnabled("spear"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(spearWood, "  #", " X ", "X  ", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(spearStone, "  #", " X ", "X  ", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(spearSteel, "  #", " X ", "X  ", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(spearDiamond, "  #", " X ", "X  ", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(spearGold, "  #", " X ", "X  ", 'X', "stickWood", '#', "ingotGold"));
@@ -373,8 +344,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("halberd"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(halberdWood, " ##", " X#", "X  ", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(halberdStone, " ##", " X#", "X  ", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(halberdSteel, " ##", " X#", "X  ", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(halberdDiamond, " ##", " X#", "X  ", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(halberdGold, " ##", " X#", "X  ", 'X', "stickWood", '#', "ingotGold"));
@@ -382,14 +351,10 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("knife"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(knifeWood, "#X", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(knifeStone, "#X", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(knifeSteel, "#X", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(knifeDiamond, "#X", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(knifeGold, "#X", 'X', "stickWood", '#', "ingotGold"));
 			
-			GameRegistry.addRecipe(new ShapedOreRecipe(knifeWood, "#", "X", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(knifeStone, "#", "X", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(knifeSteel, "#", "X", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(knifeDiamond, "#", "X", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(knifeGold, "#", "X", 'X', "stickWood", '#', "ingotGold"));
@@ -408,8 +373,6 @@ public class BalkonsWeaponMod
 		{
 			if (modConfig.isEnabled("knife"))
 			{
-				GameRegistry.addShapelessRecipe(new ItemStack(bayonetWood), knifeWood, musket);
-				GameRegistry.addShapelessRecipe(new ItemStack(bayonetStone), knifeStone, musket);
 				GameRegistry.addShapelessRecipe(new ItemStack(bayonetSteel), knifeSteel, musket);
 				GameRegistry.addShapelessRecipe(new ItemStack(bayonetDiamond), knifeDiamond, musket);
 				GameRegistry.addShapelessRecipe(new ItemStack(bayonetGold), knifeGold, musket);
@@ -428,8 +391,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("battleaxe"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeWood, "###", "#X#", " X ", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeStone, "###", "#X#", " X ", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeSteel, "###", "#X#", " X ", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeDiamond, "###", "#X#", " X ", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeGold, "###", "#X#", " X ", 'X', "stickWood", '#', "ingotGold"));
@@ -437,8 +398,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("warhammer"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(warhammerWood, "#X#", "#X#", " X ", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(warhammerStone, "#X#", "#X#", " X ", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(warhammerSteel, "#X#", "#X#", " X ", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(warhammerDiamond, "#X#", "#X#", " X ", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(warhammerGold, "#X#", "#X#", " X ", 'X', "stickWood", '#', "ingotGold"));
@@ -475,8 +434,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("flail"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(flailWood, "  O", " XO", "X #", 'X', "stickWood", 'O', Items.string, '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(flailStone, "  O", " XO", "X #", 'X', "stickWood", 'O', Items.string, '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(flailSteel, "  O", " XO", "X #", 'X', "stickWood", 'O', Items.string, '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(flailDiamond, "  O", " XO", "X #", 'X', "stickWood", 'O', Items.string, '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(flailGold, "  O", " XO", "X #", 'X', "stickWood", 'O', Items.string, '#', "ingotGold"));
@@ -522,7 +479,6 @@ public class BalkonsWeaponMod
 		if (modConfig.isEnabled("boomerang"))
 		{
 			GameRegistry.addRecipe(new ShapedOreRecipe(boomerangWood, "XX#", "  X", "  X", 'X', "plankWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(boomerangStone, "XX#", "  X", "  X", 'X', "plankWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(boomerangSteel, "XX#", "  X", "  X", 'X', "plankWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(boomerangDiamond, "XX#", "  X", "  X", 'X', "plankWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(boomerangGold, "XX#", "  X", "  X", 'X', "plankWood", '#', "ingotGold"));
@@ -532,8 +488,6 @@ public class BalkonsWeaponMod
 		
 		if (modConfig.isEnabled("katana"))
 		{
-			GameRegistry.addRecipe(new ShapedOreRecipe(katanaWood, "  #", " # ", "X  ", 'X', "stickWood", '#', "plankWood"));
-			GameRegistry.addRecipe(new ShapedOreRecipe(katanaStone, "  #", " # ", "X  ", 'X', "stickWood", '#', Blocks.cobblestone));
 			GameRegistry.addRecipe(new ShapedOreRecipe(katanaSteel, "  #", " # ", "X  ", 'X', "stickWood", '#', "ingotIron"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(katanaDiamond, "  #", " # ", "X  ", 'X', "stickWood", '#', "gemDiamond"));
 			GameRegistry.addRecipe(new ShapedOreRecipe(katanaGold, "  #", " # ", "X  ", 'X', "stickWood", '#', "ingotGold"));
