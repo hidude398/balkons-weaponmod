@@ -179,11 +179,11 @@ public class BalkonsWeaponMod
 		modConfig.addEnableSetting("cannon");
 		modConfig.addEnableSetting("dummy");
 		
-		modConfig.addReloadTimeSetting("musket", 30);
-		modConfig.addReloadTimeSetting("crossbow", 15);
-		modConfig.addReloadTimeSetting("blowgun", 10);
+		modConfig.addReloadTimeSetting("musket", 20);
+		modConfig.addReloadTimeSetting("crossbow", 10);
+		modConfig.addReloadTimeSetting("blowgun", 8);
 		modConfig.addReloadTimeSetting("blunderbuss", 20);
-		modConfig.addReloadTimeSetting("flintlock", 15);
+		modConfig.addReloadTimeSetting("flintlock", 20);
 		modConfig.loadConfig();
 		
 		addModItems();
