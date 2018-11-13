@@ -201,14 +201,14 @@ public class MeleeComponent extends AbstractWeaponComponent
 	public static enum MeleeSpecs
 	{
 		//NAME db, dm, edb, edm, bd, kb, dfe, dfb, mss, ad
-		SPEAR(0, 1F, 3, 1F, 1F, 0.2F, 1, 2, 1, 0),
-		HALBERD(0, 1F, 4, 1F, 1.5F, 0.6F, 1, 2, 1, 8),
-		BATTLEAXE(0, 1F, 3, 1F, 1.5F, 0.5F, 1, 2, 1, 5),
-		WARHAMMER(0, 1F, 4, 1F, 1F, 0.7F, 1, 2, 1, 5),
-		KNIFE(0, 0.5F, 3, 1F, 1.5F, 0.2F, 1, 2, 1, 0),
-		KATANA(0, 1F, 1, 1F, 1F, 0F, 1, 2, 1, -6),
-		FIREROD(1, 0F, 1, 0F, 1F, 0.4F, 2, 0, 1, 0),
-		BOOMERANG(0, 0.5F, 2, 1F, 1F, 0.4F, 1, 1, 1, 0),
+		SPEAR(0, 1F, 250, 1F, 1F, 0.2F, 1, 2, 1, 0),
+		HALBERD(0, 1F, 300, 1F, 1.5F, 0.6F, 1, 2, 1, 8),
+		BATTLEAXE(0, 1F, 350, 1F, 1.5F, 0.5F, 1, 2, 1, 5),
+		WARHAMMER(0, 1F, 400, 1F, 1F, 0.7F, 1, 2, 1, 5),
+		KNIFE(0, 0.5F, 60, 1F, 1.5F, 0.2F, 1, 2, 1, 0),
+		KATANA(0, 1F, 200, 1F, 1F, 0F, 1, 2, 1, -6),
+		FIREROD(1, 0F, 100, 0F, 1F, 0.4F, 2, 0, 1, 0),
+		BOOMERANG(0, 0.5F, 200, 1F, 1F, 0.4F, 1, 1, 1, 0),
 		NONE(0, 0F, 1, 0F, 1F, 0.4F, 0, 0, 1, 0);
 		
 		private MeleeSpecs(int durbase, float durmult, float dmgbase, float dmgmult, float blockdmg, float knockback, int dmgfromentity, int dmgfromblock, int stacksize, int attackdelay)
