@@ -52,7 +52,7 @@ public class EntityBlunderShot extends EntityProjectile
 	@Override
 	public void onEntityHit(Entity entity)
 	{
-		float damage = 4F + extraDamage;
+		float damage = 200F + extraDamage;
 		
 		DamageSource damagesource;
 		if (shootingEntity == null)
