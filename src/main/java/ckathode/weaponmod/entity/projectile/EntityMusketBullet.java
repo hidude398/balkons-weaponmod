@@ -64,7 +64,7 @@ public class EntityMusketBullet extends EntityProjectile
 	@Override
 	public void onEntityHit(Entity entity)
 	{
-		float damage = 20F + extraDamage;
+		float damage = 2000F + extraDamage;
 		DamageSource damagesource = null;
 		if (shootingEntity == null)
 		{
